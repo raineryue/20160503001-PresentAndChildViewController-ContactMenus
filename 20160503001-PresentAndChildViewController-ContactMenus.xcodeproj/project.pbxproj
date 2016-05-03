@@ -15,6 +15,10 @@
 		D53DF4C61CD83200001F0397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53DF4C41CD83200001F0397 /* LaunchScreen.storyboard */; };
 		D53DF4D11CD83201001F0397 /* _0160503001_PresentAndChildViewController_ContactMenusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF4D01CD83201001F0397 /* _0160503001_PresentAndChildViewController_ContactMenusTests.m */; };
 		D53DF4DC1CD83201001F0397 /* _0160503001_PresentAndChildViewController_ContactMenusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF4DB1CD83201001F0397 /* _0160503001_PresentAndChildViewController_ContactMenusUITests.m */; };
+		D53DF4EB1CD83B71001F0397 /* ParentMenusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF4EA1CD83B71001F0397 /* ParentMenusViewController.m */; };
+		D53DF4EE1CD83B97001F0397 /* ChildMenusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF4ED1CD83B97001F0397 /* ChildMenusViewController.m */; };
+		D53DF4F01CD8400B001F0397 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = D53DF4EF1CD8400B001F0397 /* categories.plist */; };
+		D53DF4F31CD8404E001F0397 /* CategoriesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF4F21CD8404E001F0397 /* CategoriesModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		D53DF4D71CD83201001F0397 /* 20160503001-PresentAndChildViewController-ContactMenusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20160503001-PresentAndChildViewController-ContactMenusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53DF4DB1CD83201001F0397 /* _0160503001_PresentAndChildViewController_ContactMenusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _0160503001_PresentAndChildViewController_ContactMenusUITests.m; sourceTree = "<group>"; };
 		D53DF4DD1CD83201001F0397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D53DF4E91CD83B71001F0397 /* ParentMenusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentMenusViewController.h; sourceTree = "<group>"; };
+		D53DF4EA1CD83B71001F0397 /* ParentMenusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentMenusViewController.m; sourceTree = "<group>"; };
+		D53DF4EC1CD83B97001F0397 /* ChildMenusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildMenusViewController.h; sourceTree = "<group>"; };
+		D53DF4ED1CD83B97001F0397 /* ChildMenusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildMenusViewController.m; sourceTree = "<group>"; };
+		D53DF4EF1CD8400B001F0397 /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		D53DF4F11CD8404E001F0397 /* CategoriesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesModel.h; sourceTree = "<group>"; };
+		D53DF4F21CD8404E001F0397 /* CategoriesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +117,15 @@
 				D53DF4BC1CD83200001F0397 /* ViewController.h */,
 				D53DF4BD1CD83200001F0397 /* ViewController.m */,
 				D53DF4BF1CD83200001F0397 /* Main.storyboard */,
+				D53DF4E91CD83B71001F0397 /* ParentMenusViewController.h */,
+				D53DF4EA1CD83B71001F0397 /* ParentMenusViewController.m */,
+				D53DF4EC1CD83B97001F0397 /* ChildMenusViewController.h */,
+				D53DF4ED1CD83B97001F0397 /* ChildMenusViewController.m */,
+				D53DF4F11CD8404E001F0397 /* CategoriesModel.h */,
+				D53DF4F21CD8404E001F0397 /* CategoriesModel.m */,
 				D53DF4C21CD83200001F0397 /* Assets.xcassets */,
 				D53DF4C41CD83200001F0397 /* LaunchScreen.storyboard */,
+				D53DF4EF1CD8400B001F0397 /* categories.plist */,
 				D53DF4C71CD83200001F0397 /* Info.plist */,
 				D53DF4B61CD83200001F0397 /* Supporting Files */,
 			);
@@ -243,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53DF4F01CD8400B001F0397 /* categories.plist in Resources */,
 				D53DF4C61CD83200001F0397 /* LaunchScreen.storyboard in Resources */,
 				D53DF4C31CD83200001F0397 /* Assets.xcassets in Resources */,
 				D53DF4C11CD83200001F0397 /* Main.storyboard in Resources */,
@@ -271,8 +290,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53DF4BE1CD83200001F0397 /* ViewController.m in Sources */,
+				D53DF4F31CD8404E001F0397 /* CategoriesModel.m in Sources */,
+				D53DF4EE1CD83B97001F0397 /* ChildMenusViewController.m in Sources */,
 				D53DF4BB1CD83200001F0397 /* AppDelegate.m in Sources */,
 				D53DF4B81CD83200001F0397 /* main.m in Sources */,
+				D53DF4EB1CD83B71001F0397 /* ParentMenusViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

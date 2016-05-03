@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "ParentMenusViewController.h"
+#import "ChildMenusViewController.h"
 
-@interface ViewController ()
+@interface ViewController () 
 
 @end
 
@@ -16,8 +18,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    ParentMenusViewController *parentMenusViewController = [[ParentMenusViewController alloc] init];
+    ChildMenusViewController *childMenusViewController = [[ChildMenusViewController alloc] init];
+    
+    parentMenusViewController.delegate = childMenusViewController;
+    
+    parentMenusViewController.view.frame = CGRectMake(0, 20, self.view.bounds.size.width * 0.5, self.view.bounds.size.height);
+    childMenusViewController.view.frame = CGRectMake(self.view.bounds.size.width * 0.5, 20, self.view.bounds.size.width * 0.5, self.view.bounds.size.height);
+    
+//    parentMenusViewController.view.backgroundColor = [UIColor redColor];
+//    childMenusViewController.view.backgroundColor = [UIColor blueColor];
+    
+    [self addChildViewController:parentMenusViewController];
+    [self addChildViewController:childMenusViewController];
+    
+    [self.view addSubview:parentMenusViewController.view];
+    [self.view addSubview:childMenusViewController.view];
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
